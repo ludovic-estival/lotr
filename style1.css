@@ -1,0 +1,192 @@
+body {
+  font-family: calibri;
+  background-color: rgb(209, 200, 200);
+}
+
+/* HEADER */
+
+header {
+  background-color: black;
+  display: flex;
+  border-bottom: 5px solid red;
+  margin: auto;
+  align-items: center;
+}
+
+header p{
+  color: white;
+  font-size: 25px;
+}
+
+
+.recouvrement{
+  position: relative;
+  width: 50%;
+}
+
+.image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.effet{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.recouvrement:hover .effet{
+  opacity: 0.8;
+}
+
+.texte{
+  color: black;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/* Corps de la page */
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/morgoth1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("images/morgoth2.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("images/arda.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.case{
+  margin-top: 1%;
+  margin-left: 20%;
+}
+
+.case a {
+  margin-right: 3%;
+  margin-left: 3%;
+  font-size: 35px;
+  color: black;
+  text-decoration: none;
+}
+
+.case a:hover {
+  color: red;
+}
+
+li{
+  margin-top: 1%;
+  font-size: 22px;
+}
+
+ul{
+  margin-top: 1%;
+  font-size: 20px;
+}
+
+h2{
+  font-size: 28px;
+  color: black;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+h3{
+  font-size: 25px;
+  color: black;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+
+p{
+  font-size: 20px;
+  color: black;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.titre{
+  text-decoration: underline;
+}
+
+input{
+  margin-left: 5%;
+  width: 100%;
+ 
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+
+}
+
+.liens a {
+  margin-right: 3%;
+  margin-left: 3%;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-top: 5%;
+}
+
+.liens a:hover {
+  color: red;
+}
+
