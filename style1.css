@@ -8,29 +8,119 @@ body {
 header {
   background-color: black;
   display: flex;
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid white;
   margin: auto;
   align-items: center;
 }
 
-header p{
+header p {
   color: white;
   font-size: 25px;
 }
 
+/* NAVIGATION */
 
-.recouvrement{
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  border-bottom: 5px solid white;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 22px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* -------------  */
+
+.images{
+  height: 50%;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RECOUVREMENT IMAGES*/
+
+.recouvrement {
   position: relative;
   width: 50%;
 }
 
-.image{
+.image {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.effet{
+.effet {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -43,11 +133,11 @@ header p{
   background-color: white;
 }
 
-.recouvrement:hover .effet{
+.recouvrement:hover .effet {
   opacity: 0.8;
 }
 
-.texte{
+.texte {
   color: black;
   font-size: 22px;
   position: absolute;
@@ -57,11 +147,9 @@ header p{
   text-align: center;
 }
 
-
-
 /* Corps de la page */
 
-h1{
+h1 {
   text-align: center;
   color: white;
 }
@@ -113,7 +201,7 @@ html {
   background-size: cover;
 }
 
-.case{
+.case {
   margin-top: 1%;
   margin-left: 20%;
 }
@@ -130,51 +218,50 @@ html {
   color: red;
 }
 
-li{
+li {
   margin-top: 1%;
   font-size: 22px;
 }
 
-ul{
+ul {
   margin-top: 1%;
   font-size: 20px;
 }
 
-h2{
+h2 {
   font-size: 28px;
   color: black;
   margin-left: 2%;
   margin-top: 5%;
 }
 
-h3{
+h3 {
   font-size: 25px;
   color: black;
   margin-left: 2%;
   margin-top: 5%;
 }
 
-p{
+p {
   font-size: 20px;
   color: black;
   margin-left: 3%;
   margin-top: 2%;
 }
 
-.titre{
+.titre {
   text-decoration: underline;
 }
 
-input{
+input {
   margin-left: 5%;
   width: 100%;
- 
+
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
-
 }
 
 .liens a {
@@ -189,4 +276,3 @@ input{
 .liens a:hover {
   color: red;
 }
-
