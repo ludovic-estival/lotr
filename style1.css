@@ -89,63 +89,29 @@ header p {
   display: block;
 }
 
-/* -------------  */
 
-.images{
-  height: 50%;
-  width: 50%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* RECOUVREMENT IMAGES*/
-
-.recouvrement {
-  position: relative;
-  width: 50%;
-}
+/*---------------------------------------*/
 
 .image {
-  display: block;
-  width: 100%;
+  width: 50%;
   height: auto;
+  margin-left: 18%;
 }
 
-.effet {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: white;
+.zoom input[type=checkbox] {
+  display: none
 }
 
-.recouvrement:hover .effet {
-  opacity: 0.8;
+.zoom img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in
 }
 
-.texte {
-  color: black;
-  font-size: 22px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.zoom input[type=checkbox]:checked~img {
+  transform: scale(1.5);
+  cursor: zoom-out
 }
+
 
 /* Corps de la page */
 
